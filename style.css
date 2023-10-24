@@ -1,18 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-.banner{
+.banner {
     /* background-color: red; */
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("images/luxury-home-design-on-budget.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("images/luxury-home-design-on-budget.jpg");
     background-size: cover;
     background-position: center;
 }
-.navbar{
+
+.navbar {
     width: 85%;
     margin: auto;
     padding: 35px 0px;
@@ -20,36 +21,52 @@
     align-items: center;
     justify-content: space-between;
 }
-.logo{
+
+.logo {
     width: 120px;
     color: white;
     cursor: pointer;
 }
-.navbar ul li{
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
 }
-.navbar ul li::after{
+
+.navbar ul li::after {
     content: '';
     height: 3px;
     width: 0%;
-    background : white;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -10px;
     transition: 0.5s;
 }
-.navbar ul li:hover::after{
+
+.navbar ul li:hover::after {
     width: 100%;
 }
-.content{
+
+.content,
+.living_room-content,
+.bedroom-content,
+.kitchen-content,
+.dining-content,
+.backyard-content {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -57,16 +74,29 @@
     text-align: center;
     color: white;
 }
-.content h1{
+
+.content h1,
+.living_room-content h1,
+.bedroom-content h1,
+.kitchen-content h1,
+.dining-content h1,
+.backyard-content h1 {
     font-size: 70px;
     margin-top: 80px;
 }
-.content p{
+
+.content p,
+.living_room-content p,
+.bedroom-content p,
+.kitchen-content p,
+.dining-content p,
+.backyard-content p {
     margin: 20px auto;
     font-weight: 100px;
     line-height: 25px;
 }
-button{
+
+button {
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -80,19 +110,48 @@ button{
     position: relative;
     overflow: hidden;
 }
-.home-banner{
+
+.living_room-banner {
     /* background-color: red; */
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("images/jon-nathon-stebbe-paydk0JcIOQ-unsplash.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("images/jon-nathon-stebbe-paydk0JcIOQ-unsplash.jpg");
     background-size: cover;
     background-position: center;
 }
-.home-content{
+
+.kitchen-banner {
+    /* background-color: red; */
     width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: white;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("images/kitchen.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.bedroom-banner {
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("images/bedroom.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.dining-banner {
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("images/dinning.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.backyard-banner {
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("images/backyard.jpg");
+    background-size: cover;
+    background-position: center;
 }
